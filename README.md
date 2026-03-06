@@ -26,7 +26,7 @@ The framework bridges number theory, quantum mechanics, information geometry, an
 
 ## How to Cite
 
-> D-ND Research Collective (2026). *[Paper Title]*. Preprint. DOI: [pending Zenodo upload]
+> Guiducci, G. (2026). *[Paper Title]*. Preprint. DOI: [pending Zenodo release]
 
 ## License
 
