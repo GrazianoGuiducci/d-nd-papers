@@ -26,7 +26,7 @@ Graziano Guiducci — Independent Research
 
 ## How to Cite
 
-> Guiducci, G. (2026). *Quantum Emergence from Primordial Potentiality: The Dual-Non-Dual Framework for State Differentiation*. Preprint. DOI: [pending Zenodo release]
+> Guiducci, G. (2026). *Quantum Emergence from Primordial Potentiality: The Dual-Non-Dual Framework for State Differentiation*. Preprint. DOI: [10.5281/zenodo.18891337](https://doi.org/10.5281/zenodo.18891337)
 
 ## License
 
