@@ -21,7 +21,7 @@ Graziano Guiducci — Independent Research
 
 ## How to Cite
 
-> Guiducci, G. (2026). *The Generative Incompleteness*. Preprint. DOI: [pending]
+> Guiducci, G. (2026). *The Generative Incompleteness*. Preprint. DOI: [10.5281/zenodo.18902950](https://doi.org/10.5281/zenodo.18902950)
 
 ## License
 
