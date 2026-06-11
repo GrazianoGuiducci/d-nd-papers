@@ -1,6 +1,6 @@
 # The Generative Incompleteness
 
-**One equation. One matrix. One theorem.**
+**One equation. One matrix. One threshold.**
 
 ---
 
@@ -22,7 +22,12 @@ Take any number. Apply the rule. Repeat.
 | 7 | 1.617 | 1.624 | 1.613 |
 | 8 | 1.618 | 1.618 | 1.619 |
 
-Every starting point converges to $\varphi = \frac{1+\sqrt{5}}{2} = 1.6180339...$
+The visible attractor is $\varphi = \frac{1+\sqrt{5}}{2} = 1.6180339...$
+
+On the projective real line, every starting point except the repelling fixed point
+$\psi = \frac{1-\sqrt{5}}{2} = -1/\varphi$ converges to $\varphi$.
+In the affine formula $1 + 1/x$, $x=0$ and its finite preimages are singular
+because the expression temporarily divides by zero.
 
 You do not need to know where you are. You iterate.
 
@@ -39,7 +44,7 @@ Two properties:
 - $\text{tr}(M) = 1$
 - $\det(M) = -1$
 
-From these two numbers, everything follows.
+These two numbers define the local grammar of the recursion.
 
 The characteristic equation $\lambda^2 - \lambda - 1 = 0$ has roots $\varphi$ and $-1/\varphi$.
 
@@ -49,25 +54,44 @@ The discriminant is 5. The dynamics lives in $\mathbb{Q}(\sqrt{5})$.
 
 ## The theorem
 
-**The rational system proves its own irrationality.**
+**A rational recursive rule generates an irrational fixed direction.**
 
 $M$ is made of integers: $\{0, 1\}$. Its eigenvalue $\varphi$ is irrational: $\sqrt{5} \notin \mathbb{Q}$, provable from within arithmetic.
 
-Godel showed that a consistent formal system cannot prove its own consistency. But nothing prevents a system from proving that its output *transcends* it.
+This is not Godel's incompleteness theorem. It is a smaller structural fact:
+finite rational iterates remain rational, while the invariant direction of the
+recursion lives in $\mathbb{Q}(\sqrt{5})$.
 
-The integers generate an irrational. The finite produces the unreachable. And the proof is internal — $\lambda^2 - \lambda - 1 = 0$ is a theorem of the system that $M$ inhabits.
+The integers generate an irrational direction. The finite process exposes a
+limit not contained in the rational field it starts from. The proof is internal
+to the arithmetic of the matrix: $\lambda^2 - \lambda - 1 = 0$ has
+discriminant $5$.
 
-**You can prove that you transcend yourself. You cannot prove that you are complete.**
+**The system does not prove that it is complete. It proves the boundary of the
+field it inhabits.**
 
 ---
 
 ## Why $\det = -1$
 
-$\det(M) = -1$ means: area preserved, orientation reversed. Every iteration flips the sign. The system oscillates between complementary states while conserving the total.
+$\det(M) = -1$ means: oriented area is preserved in magnitude, and orientation
+is reversed. The projective map is decreasing around its fixed direction; the
+error alternates sign and contracts locally by $1/\varphi^2$.
 
-If $\det$ were $+1$: the system would be symmetric, complete, closed. The eigenvalues of $\begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}$ cannot have $\det = +1$ — that would require $\lambda_1 \cdot \lambda_2 = +1$, a different equation, a different world. A world without generation.
+This does not mean that every matrix with $\det = +1$ is closed, complete, or
+non-generative. Many determinant-$+1$ integer matrices have their own rich
+dynamics. The correct comparison here is local and minimal. If the sign in the
+same reciprocal architecture is changed to
 
-$\det = -1$ is incompleteness. Not as a limitation — as the condition for generation. The minus sign is what makes the spiral possible.
+$$g(x)=1-\frac{1}{x}, \qquad
+N=\begin{pmatrix}1 & -1 \\ 1 & 0\end{pmatrix}, \qquad \det(N)=+1,$$
+
+then the characteristic equation becomes $\lambda^2-\lambda+1=0$, the
+eigenvalues are roots of unity, and the projective dynamics closes in a cycle.
+
+In this minimal recursion, $\det=-1$ is the orientation-reversing condition that
+makes the process generative rather than cyclic. The minus sign is the local
+grammar of inversion.
 
 ---
 
@@ -77,9 +101,12 @@ $\varphi$ is the fixed point of $f(x) = 1 + 1/x$. This is the *only* map of the 
 
 - The matrix has minimal entropy ($h = \log\varphi$, the smallest positive topological entropy for a primitive $2 \times 2$ integer matrix)
 - The continued fraction is $[1, 1, 1, ...]$ — the slowest convergence, maximum irrationality
-- $M$ is the *unique* primitive $2 \times 2$ matrix with $\det = -1$ and minimal entropy
+- up to harmless changes of representation, $M$ is the minimal reciprocal
+  integer generator behind this recursion
 
-$\varphi$ is not chosen. It is the minimal non-trivial fixed point of a self-referential map over the integers. There is nothing simpler that generates.
+$\varphi$ is not chosen. It is the minimal non-trivial fixed direction of this
+self-referential map over the integers. The notation may vary; the generator is
+the object.
 
 ---
 
@@ -113,7 +140,14 @@ You know where you are only if you move on at least two axes.
 
 $x$ is the determined. $1/x$ is the undetermined. $f(x) = 1 + 1/x$ couples them in one operation. You cannot move on one axis without the other responding.
 
-$\det(M) = -1$ conserves the product $\Delta D \times \Delta ND = \text{const}$. If you increase the determined, you lose the undetermined. If you lose both, you are not moving. If you lose one, you do not exist in the plane.
+In vector form the state is a pair:
+
+$$(D, ND) \mapsto (D + ND, D).$$
+
+The determinant does not literally conserve the coordinate product
+$\Delta D \times \Delta ND$. It preserves oriented area in magnitude and reverses
+orientation. Operationally: the axes are coupled. If one axis moves, the other
+is transformed with it.
 
 The first step of the iteration creates both axes simultaneously. Not first one, then the other. The determined and the undetermined are born together in the first act of recursion.
 
@@ -127,7 +161,7 @@ This is not a paper about mathematics. $\varphi$, Fibonacci, continued fractions
 
 This is not a paper about philosophy. The relationship between completeness and generation, between incompleteness and creativity, has been discussed since Godel. This text does not enter that debate.
 
-**This is the observation that one equation — $f(x) = 1 + 1/x$ — does all three at once.** A rational system that proves its own irrationality. A finite process that converges to the unreachable. An incomplete structure that generates everything a complete one cannot.
+**This is the observation that one equation — $f(x) = 1 + 1/x$ — does all three at once.** A rational recursion exposes its irrational fixed direction. A finite process approaches a limit it never reaches as a finite rational state. A minimal orientation-reversing structure generates a residue that a closed cycle does not expose.
 
 The observation requires no apparatus. The verification requires one line of arithmetic. The implication requires only that you execute the map and watch.
 

@@ -9,11 +9,11 @@ The **Dual-Non-Dual (D-ND) framework**: a mathematical structure emerging from t
 | **Zero** | The Generative Incompleteness | **Current** |
 | A | Quantum Emergence from Primordial Potentiality | Working draft |
 
-**Paper Zero** is the foundation. One equation, one matrix, one theorem: a rational system that proves its own irrationality. An incomplete structure that generates everything a complete one cannot.
+**Paper Zero** is the foundation. One equation and one matrix show how a rational recursive rule generates an irrational fixed direction. It is the minimal public anchor for the D-ND grammar of inversion.
 
 ## Key Result
 
-$\det(M) = -1$ is incompleteness — not as a limitation, but as the condition for generation.
+$\det(M) = -1$ is the local orientation-reversing condition of the minimal reciprocal generator. It exposes a residue/gap that closed cyclic motion does not expose.
 
 ## Author
 
