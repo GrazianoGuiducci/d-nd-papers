@@ -1,6 +1,6 @@
 # D-ND Framework — Research Papers
 
-The **Dual-Non-Dual (D-ND) framework**: a mathematical structure emerging from the iterative map $f(x) = 1 + 1/x$, whose fixed point is the golden ratio $\varphi$ and whose dynamics are governed by the matrix $M = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}$ with $\text{tr}(M)=1$, $\det(M)=-1$.
+The **Dual-Non-Dual (D-ND) model**, developed by Graziano Guiducci, concerns the movement of possibility through an indeterminate reference and a dipolar relation that contains its poles. The observer is the resultant entity of alignment; observer, alignment and resultant are described within the same movement. Mathematics is included in this wider logical model. **Paper Zero** presents one particular mathematical representation: the rational recurrence $f(x)=1+1/x$ and its irrational attracting projective direction.
 
 ## Papers
 
@@ -12,11 +12,11 @@ The **Dual-Non-Dual (D-ND) framework**: a mathematical structure emerging from t
 
 **Papers B–G** were included in a historical public snapshot on 4 March 2026 and removed from the current public branch on 6 March. Their historical availability must not be confused with current publication approval.
 
-**Paper Zero** is the foundation. One equation and one matrix show how a rational recursive rule generates an irrational fixed direction. It is the minimal public anchor for the D-ND grammar of inversion.
+**Paper Zero — revised manuscript, 28 October 2026.** Its Markdown, LaTeX and PDF share the dated revision. The March 2026 release v2.0.0 remains a historical edition with its own archive and DOI.
 
 ## Key Result
 
-$\det(M) = -1$ is the local orientation-reversing condition of the minimal reciprocal generator. It exposes a residue/gap that closed cyclic motion does not expose.
+An integer matrix has an irrational attracting eigen-direction. On the real projective line, all initial directions except the repeller converge to it; on the positive affine domain every iterate is defined. The eigenvector changes scale while its direction remains fixed. Determinant $-1$ describes orientation reversal and area preservation in magnitude.
 
 ## Public versioning policy
 
@@ -28,7 +28,9 @@ Graziano Guiducci — Independent Research
 
 ## How to Cite
 
-> Guiducci, G. (2026). *The Generative Incompleteness*. Preprint. DOI: [10.5281/zenodo.18902950](https://doi.org/10.5281/zenodo.18902950)
+> Guiducci, G. (2026). *The Generative Incompleteness*. Revised manuscript, 28 October 2026.
+>
+> Historical edition: March 2026, repository release v2.0.0, DOI [10.5281/zenodo.18902950](https://doi.org/10.5281/zenodo.18902950). That DOI identifies the historical repository archive; the dated revision has its own source identity.
 
 ## License
 

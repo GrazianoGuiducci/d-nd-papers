@@ -1,163 +1,168 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{amsmath,amssymb}
-\usepackage{booktabs}
-\usepackage[margin=2.5cm]{geometry}
-\usepackage{lmodern}
-\usepackage{hyperref}
-\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=black}
-
-\pagestyle{empty}
-
+\usepackage{lmodern,amsmath,amssymb,booktabs,microtype,hyperref,needspace}
+\usepackage[margin=22mm]{geometry}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black,pdftitle={Paper Zero - revised manuscript 2026-10-28},pdfauthor={Graziano Guiducci}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
 \begin{document}
+\begin{center}{\LARGE\bfseries The Generative Incompleteness}\end{center}
 
-\begin{center}
-{\LARGE\bfseries The Generative Incompleteness}
+\textbf{Graziano Guiducci \textperiodcentered{}  Revised manuscript \textperiodcentered{}  28 October 2026}
+\par
 
-\vspace{0.8em}
-{\large Graziano Guiducci}
+\emph{One recurrence. An invariant direction. A continuing state.}
+\par
 
-\vspace{0.3em}
-{\small Independent Research --- \href{https://d-nd.com}{d-nd.com}}
+The D-ND source describes the movement of possibility through an indeterminate reference and a dipolar relation that contains its poles. The observer is the resultant entity of alignment; observer, alignment and resultant are described within the same movement. Mathematics is included in this wider logical model. Paper Zero presents one particular mathematical representation: a rational recurrence with an irrational attracting projective direction.
+\par
 
-\vspace{0.3em}
-{\small March 2026}
+The calculation makes a precise relationship inspectable: a direction can remain invariant while the state that carries it continues to change.
+\par
 
-\vspace{0.5em}
-\textit{One equation. One matrix. One theorem.}
-\end{center}
-
-\vspace{1em}
-\hrule
-\vspace{1.5em}
-
-\section*{The map}
+\Needspace{9\baselineskip}\section*{The map}
 
 \[
-f(x) = 1 + \frac{1}{x}
+f(x)=1+\frac{1}{x}.
 \]
 
-Take any number. Apply the rule. Repeat.
+For a positive starting value, every affine iterate is defined and the sequence converges to the golden ratio. The table also includes a negative starting value whose particular orbit remains defined. Values are rounded to three decimal places.
+\par
 
 \begin{center}
-\begin{tabular}{cccc}
+\begin{tabular}{lrrr}
 \toprule
-Step & $x_0 = 7$ & $x_0 = 0.1$ & $x_0 = -3$ \\
+Step & $x_0=7$ & $x_0=0.1$ & $x_0=-3$ \\
 \midrule
-0 & 7 & 0.1 & $-3$ \\
-1 & 1.143 & 11 & 0.667 \\
-2 & 1.875 & 1.091 & 2.5 \\
-3 & 1.533 & 1.917 & 1.4 \\
+0 & 7.000 & 0.100 & -3.000 \\
+1 & 1.143 & 11.000 & 0.667 \\
+2 & 1.875 & 1.091 & 2.500 \\
+3 & 1.533 & 1.917 & 1.400 \\
 4 & 1.652 & 1.522 & 1.714 \\
 5 & 1.605 & 1.657 & 1.583 \\
 6 & 1.623 & 1.603 & 1.632 \\
-7 & 1.617 & 1.624 & 1.613 \\
-8 & 1.618 & 1.618 & 1.619 \\
+7 & 1.616 & 1.624 & 1.613 \\
+8 & 1.619 & 1.616 & 1.620 \\
 \bottomrule
 \end{tabular}
 \end{center}
 
-Every starting point converges to $\varphi = \frac{1+\sqrt{5}}{2} = 1.6180339\ldots$
-
-You do not need to know where you are. You iterate.
-
-\section*{The matrix}
-
-The map has a matrix:
+The two real fixed points are
+\par
 
 \[
-M = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}
+\varphi=\frac{1+\sqrt5}{2},\qquad \psi=\frac{1-\sqrt5}{2}=-\frac1\varphi.
 \]
 
-Two properties:
-\begin{itemize}
-\item $\mathrm{tr}(M) = 1$
-\item $\det(M) = -1$
-\end{itemize}
+On the real projective line, the transformation is defined at every point and converges to the direction represented by $\varphi$ from every initial direction except the fixed repeller $\psi$. In the affine chart, zero and its finite preimages encounter division by zero: for example, $-1\mapsto0$ has no next affine value. The projective orbit continues through the point at infinity.
+\par
 
-From these two numbers, everything follows.
+\Needspace{9\baselineskip}\section*{The matrix and the convergence}
 
-The characteristic equation $\lambda^2 - \lambda - 1 = 0$ has roots $\varphi$ and $-1/\varphi$.
+\[
+M=\begin{pmatrix}1&1\\1&0\end{pmatrix},\qquad \operatorname{tr}M=1,\qquad \det M=-1.
+\]
 
-The discriminant is 5. The dynamics lives in $\mathbb{Q}(\sqrt{5})$.
+The characteristic polynomial is $\lambda^2-\lambda-1$. Its eigenvalues are $\varphi$ and $\psi$. Both are quadratic algebraic irrationals.
+\par
 
-\section*{The theorem}
+Let $r=(\varphi,1)^T$ and $s=(\psi,1)^T$. Every nonzero vector has the form $v=ar+bs$. For $a\ne0$,
+\par
 
-\textbf{The rational system proves its own irrationality.}
+\[
+[M^n v]=\left[r+\frac ba\left(\frac\psi\varphi\right)^n s\right]\longrightarrow[r],\qquad \left|\frac\psi\varphi\right|=\varphi^{-2}<1.
+\]
 
-$M$ is made of integers: $\{0, 1\}$. Its eigenvalue $\varphi$ is irrational: $\sqrt{5} \notin \mathbb{Q}$, provable from within arithmetic.
+Brackets denote a projective direction: nonzero scalar multiples represent the same point. If $a=0$, the direction is $[s]$ and remains fixed. This proves the stated projective convergence, including its exception.
+\par
 
-G\"odel showed that a consistent formal system cannot prove its own consistency. But nothing prevents a system from proving that its output \textit{transcends} it.
+Finite rational affine iterates remain rational whenever defined. Their attracting limit is irrational. The title names this relationship between the rational field of the finite iterates and the invariant direction in its quadratic extension $\mathbb Q(\sqrt5)$. This is the algebraic statement established here. Gödel's incompleteness theorems concern provability in formal theories under their own hypotheses.
+\par
 
-The integers generate an irrational. The finite produces the unreachable. And the proof is internal --- $\lambda^2 - \lambda - 1 = 0$ is a theorem of the system that $M$ inhabits.
+\Needspace{9\baselineskip}\section*{Orientation and growth}
 
-\begin{center}
-\textbf{You can prove that you transcend yourself. You cannot prove that you are complete.}
-\end{center}
+The determinant records an exact geometric property: for any two vectors, the signed area they span changes sign under $M$, while its magnitude is preserved.
+\par
 
-\section*{Why $\det = -1$}
+Growth and periodicity also depend on the eigenstructure. For comparison,
+\par
 
-$\det(M) = -1$ means: area preserved, orientation reversed. Every iteration flips the sign. The system oscillates between complementary states while conserving the total.
+\[
+B=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad B^2=I,\quad \det B=-1;\qquad C=\begin{pmatrix}2&1\\1&1\end{pmatrix},\quad \det C=1.
+\]
 
-If $\det$ were $+1$: the system would be symmetric, complete, closed. The eigenvalues would satisfy $\lambda_1 \cdot \lambda_2 = +1$ --- a different equation, a different world. A world without generation.
+$B$ is periodic; $C$ has expanding eigenvalue $(3+\sqrt5)/2$. Within the chosen reciprocal pair, changing the rule to $g(x)=1-1/x$ gives
+\par
 
-$\det = -1$ is incompleteness. Not as a limitation --- as the condition for generation. The minus sign is what makes the spiral possible.
+\[
+N=\begin{pmatrix}1&-1\\1&0\end{pmatrix},\qquad N^3=-I.
+\]
 
-\section*{Why $\varphi$}
+Its projective transformation has period three. This comparison distinguishes these two rules. The sign of the determinant alone does not classify generative growth.
+\par
 
-$\varphi$ is the fixed point of $f(x) = 1 + 1/x$. The matrix $M$ is the \textit{unique} primitive $2 \times 2$ integer matrix with $\det = -1$ and minimal topological entropy $h = \log\varphi$.
+\Needspace{9\baselineskip}\section*{Why the golden ratio appears}
 
-The continued fraction of $\varphi$ is $[1, 1, 1, \ldots]$ --- the slowest convergence, maximum irrationality. There is nothing simpler that generates.
+The positive fixed-point equation $x=1+1/x$ gives $x^2-x-1=0$ and therefore $x=\varphi$. Its continued fraction is $[1;1,1,1,\ldots]$.
+\par
 
-\section*{The first step}
+A precise minimality statement is available: among primitive, nonnegative integer $2\times2$ matrices with determinant $-1$, the smallest spectral radius is $\varphi$. Indeed, their integer trace $t$ is at least one, and the spectral radius is $(t+\sqrt{t^2+4})/2$. At $t=1$, the diagonal entries are zero and one, and the off-diagonal entries are both one. The two representatives are $M$ and $PMP$, where $P=B$ exchanges the coordinates.
+\par
 
-Starting from $x_0 = 7$, after one step: $x_1 = 1.143$.
+Entropy belongs to a specified dynamical system. With $M$ as an adjacency matrix, the golden-mean shift has topological entropy $\log\varphi$ (natural logarithm). The Fibonacci substitution with the same incidence matrix has entropy zero. The projective map studied here is a circle homeomorphism and also has entropy zero. These are different uses of the same matrix.
+\par
 
-The distance to $\varphi$ drops from $5.382$ to $0.475$ --- a reduction of \textbf{91.2\%}.
+\Needspace{9\baselineskip}\section*{A fixed direction and a continuing state}
 
-By step 4: \textbf{99.4\%} of the convergence is complete.
+At the attracting direction,
+\par
 
-The first step carries most of the information. This is autological: the map that says ``the first iteration matters most'' demonstrates it on itself.
+\[
+Mr=\varphi r,\qquad M^nr=\varphi^nr,\qquad [M^nr]=[r].
+\]
 
-\section*{$R + 1 = R$}
+The vector changes scale at every step; its projective direction stays fixed. This relationship was already developed in the D-ND manuscript on relational distinction and continuity of the resultant, Appendix B, 20 October 2026.
+\par
 
-At the fixed point: $f(\varphi) = 1 + 1/\varphi = \varphi$.
+Within this representation, the expression $R+1=R$ can be read as one further application of the projective transformation leaving its fixed direction invariant: $T([r])=[r]$. This is one mathematical reading of the D-ND resultant. The source meaning of resultant, reference, movement and observer remains available beyond this chosen representation.
+\par
 
-The next iteration does not change the result. It reveals what was already there.
+\Needspace{9\baselineskip}\section*{The two coordinates}
 
-This is not a tautology. It is the condition that the process has found its own ground. Before the fixed point, each step changes the state. At the fixed point, the step and the state are the same thing.
+Write the state as a related pair of coordinates $(D,ND)$. Then
+\par
 
-The equation $R + 1 = R$ says: one more iteration adds nothing. Not because the iteration is empty --- because the result already contains it.
+\[
+(D,ND)\longmapsto(D+ND,D),\qquad x=\frac D{ND},\qquad x'=\frac{D+ND}{D}=1+\frac1x.
+\]
 
-\section*{Two axes}
+Both coordinates are already present in the input and are updated in one operation. Their names provide the interpretation chosen for this construction; the dipolar relation that contains its poles belongs to the wider D-ND source. The determinant describes area, rather than conservation of the coordinate product $D\cdot ND$.
+\par
 
-You know where you are only if you move on at least two axes.
+\Needspace{9\baselineskip}\section*{The numerical first step}
 
-$x$ is the determined. $1/x$ is the undetermined. $f(x) = 1 + 1/x$ couples them in one operation. You cannot move on one axis without the other responding.
+From $x_0=7$, the first iterate is exactly $8/7$ and the fourth is $38/23$. Relative to the initial absolute error $|7-\varphi|$, the error falls by approximately \textbf{91.170943\%} after one step and \textbf{99.365661\%} after four steps. The familiar rounded values, \textbf{91.2\%} and \textbf{99.4\%}, express this numerical example. The percentages measure reduction of absolute error.
+\par
 
-$\det(M) = -1$ conserves the product $\Delta D \times \Delta ND = \mathrm{const}$. If you increase the determined, you lose the undetermined. If you lose both, you are not moving. If you lose one, you do not exist in the plane.
+\Needspace{9\baselineskip}\section*{The relationship made visible}
 
-The first step of the iteration creates both axes simultaneously. Not first one, then the other. The determined and the undetermined are born together in the first act of recursion.
+An integer matrix has an irrational attracting eigen-direction. Rational projective iteration approaches that direction on the stated domain; an eigenvector on it continues to change scale. Paper Zero makes this relation of invariance and continuation explicit within the wider D-ND research.
+\par
 
-\section*{What this is not}
+The algebraic proof is given above. Iteration makes its consequence observable.
+\par
 
-This is not a paper about physics. $M$ appears in quasicrystals, tight-binding models, Fibonacci lattices, photonic crystals, and the trace map of substitution sequences. The numerical results are published and verified. But this text is not about those applications.
+\Needspace{9\baselineskip}\section*{Sources and edition}
 
-This is not a paper about mathematics. $\varphi$, Fibonacci, continued fractions, and $\mathbb{Q}(\sqrt{5})$ are well-known. Nothing here is new to number theory.
+The D-ND model and its source observations are attributed to Graziano Guiducci. The authorial clarification of 27 October 2026 places mathematics within the general logical model. This revised manuscript uses classical mathematics; its mathematical examples and interpretations are distinguished from those authorial formulations.
+\par
 
-This is not a paper about philosophy. The relationship between completeness and generation, between incompleteness and creativity, has been discussed since G\"odel. This text does not enter that debate.
+For the entropy distinction: H. Bruin, \emph{Ergodic Theory I}, Lecture 18, University of Vienna; M. Baake, T. Spindeler and N. Strungaru, \emph{Diffraction of compatible random substitutions in one dimension}, Indagationes Mathematicae 29 (2018), 1031--1071, DOI: 10.1016/j.indag.2018.05.008. The projective entropy statement also follows directly from the circle-partition argument recorded in the accompanying revision notes.
+\par
 
-\textbf{This is the observation that one equation --- $f(x) = 1 + 1/x$ --- does all three at once.} A rational system that proves its own irrationality. A finite process that converges to the unreachable. An incomplete structure that generates everything a complete one cannot.
-
-The observation requires no apparatus. The verification requires one line of arithmetic. The implication requires only that you execute the map and watch.
-
-\vspace{2em}
-\begin{center}
-\textit{The map is the proof. The iteration is the demonstration. The fixed point is the theorem.}
-
-\vspace{0.5em}
-\textit{Execute it.}
-\end{center}
-
+Historical edition: March 2026, DOI \textbf{10.5281/zenodo.18902950}, the archived repository release v2.0.0. That DOI identifies the historical deposit; this revised manuscript has its own dated identity.
+\par
 \end{document}

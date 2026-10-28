@@ -1,172 +1,121 @@
 # The Generative Incompleteness
 
-**One equation. One matrix. One threshold.**
+**Graziano Guiducci · Revised manuscript · 28 October 2026**
 
----
+*One recurrence. An invariant direction. A continuing state.*
+
+The D-ND source describes the movement of possibility through an indeterminate reference and a dipolar relation that contains its poles. The observer is the resultant entity of alignment; observer, alignment and resultant are described within the same movement. Mathematics is included in this wider logical model. Paper Zero presents one particular mathematical representation: a rational recurrence with an irrational attracting projective direction.
+
+The calculation makes a precise relationship inspectable: a direction can remain invariant while the state that carries it continues to change.
 
 ## The map
 
-$$f(x) = 1 + \frac{1}{x}$$
+$$
+f(x)=1+\frac{1}{x}.
+$$
 
-Take any number. Apply the rule. Repeat.
+For a positive starting value, every affine iterate is defined and the sequence converges to the golden ratio. The table also includes a negative starting value whose particular orbit remains defined. Values are rounded to three decimal places.
 
-| Step | x = 7 | x = 0.1 | x = -3 |
-|------|-------|---------|--------|
-| 0 | 7 | 0.1 | -3 |
-| 1 | 1.143 | 11 | 0.667 |
-| 2 | 1.875 | 1.091 | 2.5 |
-| 3 | 1.533 | 1.917 | 1.4 |
+| Step | $x_0=7$ | $x_0=0.1$ | $x_0=-3$ |
+|---|---|---|---|
+| 0 | 7.000 | 0.100 | -3.000 |
+| 1 | 1.143 | 11.000 | 0.667 |
+| 2 | 1.875 | 1.091 | 2.500 |
+| 3 | 1.533 | 1.917 | 1.400 |
 | 4 | 1.652 | 1.522 | 1.714 |
 | 5 | 1.605 | 1.657 | 1.583 |
 | 6 | 1.623 | 1.603 | 1.632 |
-| 7 | 1.617 | 1.624 | 1.613 |
-| 8 | 1.618 | 1.618 | 1.619 |
+| 7 | 1.616 | 1.624 | 1.613 |
+| 8 | 1.619 | 1.616 | 1.620 |
 
-The visible attractor is $\varphi = \frac{1+\sqrt{5}}{2} = 1.6180339...$
+The two real fixed points are
 
-On the projective real line, every starting point except the repelling fixed point
-$\psi = \frac{1-\sqrt{5}}{2} = -1/\varphi$ converges to $\varphi$.
-In the affine formula $1 + 1/x$, $x=0$ and its finite preimages are singular
-because the expression temporarily divides by zero.
+$$
+\varphi=\frac{1+\sqrt5}{2},\qquad \psi=\frac{1-\sqrt5}{2}=-\frac1\varphi.
+$$
 
-You do not need to know where you are. You iterate.
+On the real projective line, the transformation is defined at every point and converges to the direction represented by $\varphi$ from every initial direction except the fixed repeller $\psi$. In the affine chart, zero and its finite preimages encounter division by zero: for example, $-1\mapsto0$ has no next affine value. The projective orbit continues through the point at infinity.
 
----
+## The matrix and the convergence
 
-## The matrix
+$$
+M=\begin{pmatrix}1&1\\1&0\end{pmatrix},\qquad \operatorname{tr}M=1,\qquad \det M=-1.
+$$
 
-The map has a matrix:
+The characteristic polynomial is $\lambda^2-\lambda-1$. Its eigenvalues are $\varphi$ and $\psi$. Both are quadratic algebraic irrationals.
 
-$$M = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}$$
+Let $r=(\varphi,1)^T$ and $s=(\psi,1)^T$. Every nonzero vector has the form $v=ar+bs$. For $a\ne0$,
 
-Two properties:
+$$
+[M^n v]=\left[r+\frac ba\left(\frac\psi\varphi\right)^n s\right]\longrightarrow[r],\qquad \left|\frac\psi\varphi\right|=\varphi^{-2}<1.
+$$
 
-- $\text{tr}(M) = 1$
-- $\det(M) = -1$
+Brackets denote a projective direction: nonzero scalar multiples represent the same point. If $a=0$, the direction is $[s]$ and remains fixed. This proves the stated projective convergence, including its exception.
 
-These two numbers define the local grammar of the recursion.
+Finite rational affine iterates remain rational whenever defined. Their attracting limit is irrational. The title names this relationship between the rational field of the finite iterates and the invariant direction in its quadratic extension $\mathbb Q(\sqrt5)$. This is the algebraic statement established here. Gödel's incompleteness theorems concern provability in formal theories under their own hypotheses.
 
-The characteristic equation $\lambda^2 - \lambda - 1 = 0$ has roots $\varphi$ and $-1/\varphi$.
+## Orientation and growth
 
-The discriminant is 5. The dynamics lives in $\mathbb{Q}(\sqrt{5})$.
+The determinant records an exact geometric property: for any two vectors, the signed area they span changes sign under $M$, while its magnitude is preserved.
 
----
+Growth and periodicity also depend on the eigenstructure. For comparison,
 
-## The theorem
+$$
+B=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad B^2=I,\quad \det B=-1;\qquad C=\begin{pmatrix}2&1\\1&1\end{pmatrix},\quad \det C=1.
+$$
 
-**A rational recursive rule generates an irrational fixed direction.**
+$B$ is periodic; $C$ has expanding eigenvalue $(3+\sqrt5)/2$. Within the chosen reciprocal pair, changing the rule to $g(x)=1-1/x$ gives
 
-$M$ is made of integers: $\{0, 1\}$. Its eigenvalue $\varphi$ is irrational: $\sqrt{5} \notin \mathbb{Q}$, provable from within arithmetic.
+$$
+N=\begin{pmatrix}1&-1\\1&0\end{pmatrix},\qquad N^3=-I.
+$$
 
-This is not Godel's incompleteness theorem. It is a smaller structural fact:
-finite rational iterates remain rational, while the invariant direction of the
-recursion lives in $\mathbb{Q}(\sqrt{5})$.
+Its projective transformation has period three. This comparison distinguishes these two rules. The sign of the determinant alone does not classify generative growth.
 
-The integers generate an irrational direction. The finite process exposes a
-limit not contained in the rational field it starts from. The proof is internal
-to the arithmetic of the matrix: $\lambda^2 - \lambda - 1 = 0$ has
-discriminant $5$.
+## Why the golden ratio appears
 
-**The system does not prove that it is complete. It proves the boundary of the
-field it inhabits.**
+The positive fixed-point equation $x=1+1/x$ gives $x^2-x-1=0$ and therefore $x=\varphi$. Its continued fraction is $[1;1,1,1,\ldots]$.
 
----
+A precise minimality statement is available: among primitive, nonnegative integer $2\times2$ matrices with determinant $-1$, the smallest spectral radius is $\varphi$. Indeed, their integer trace $t$ is at least one, and the spectral radius is $(t+\sqrt{t^2+4})/2$. At $t=1$, the diagonal entries are zero and one, and the off-diagonal entries are both one. The two representatives are $M$ and $PMP$, where $P=B$ exchanges the coordinates.
 
-## Why $\det = -1$
+Entropy belongs to a specified dynamical system. With $M$ as an adjacency matrix, the golden-mean shift has topological entropy $\log\varphi$ (natural logarithm). The Fibonacci substitution with the same incidence matrix has entropy zero. The projective map studied here is a circle homeomorphism and also has entropy zero. These are different uses of the same matrix.
 
-$\det(M) = -1$ means: oriented area is preserved in magnitude, and orientation
-is reversed. The projective map is decreasing around its fixed direction; the
-error alternates sign and contracts locally by $1/\varphi^2$.
+## A fixed direction and a continuing state
 
-This does not mean that every matrix with $\det = +1$ is closed, complete, or
-non-generative. Many determinant-$+1$ integer matrices have their own rich
-dynamics. The correct comparison here is local and minimal. If the sign in the
-same reciprocal architecture is changed to
+At the attracting direction,
 
-$$g(x)=1-\frac{1}{x}, \qquad
-N=\begin{pmatrix}1 & -1 \\ 1 & 0\end{pmatrix}, \qquad \det(N)=+1,$$
+$$
+Mr=\varphi r,\qquad M^nr=\varphi^nr,\qquad [M^nr]=[r].
+$$
 
-then the characteristic equation becomes $\lambda^2-\lambda+1=0$, the
-eigenvalues are roots of unity, and the projective dynamics closes in a cycle.
+The vector changes scale at every step; its projective direction stays fixed. This relationship was already developed in the D-ND manuscript on relational distinction and continuity of the resultant, Appendix B, 20 October 2026.
 
-In this minimal recursion, $\det=-1$ is the orientation-reversing condition that
-makes the process generative rather than cyclic. The minus sign is the local
-grammar of inversion.
+Within this representation, the expression $R+1=R$ can be read as one further application of the projective transformation leaving its fixed direction invariant: $T([r])=[r]$. This is one mathematical reading of the D-ND resultant. The source meaning of resultant, reference, movement and observer remains available beyond this chosen representation.
 
----
+## The two coordinates
 
-## Why $\varphi$
+Write the state as a related pair of coordinates $(D,ND)$. Then
 
-$\varphi$ is the fixed point of $f(x) = 1 + 1/x$. This is the *only* map of the form $f(x) = a + b/x$ where:
+$$
+(D,ND)\longmapsto(D+ND,D),\qquad x=\frac D{ND},\qquad x'=\frac{D+ND}{D}=1+\frac1x.
+$$
 
-- The matrix has minimal entropy ($h = \log\varphi$, the smallest positive topological entropy for a primitive $2 \times 2$ integer matrix)
-- The continued fraction is $[1, 1, 1, ...]$ — the slowest convergence, maximum irrationality
-- up to harmless changes of representation, $M$ is the minimal reciprocal
-  integer generator behind this recursion
+Both coordinates are already present in the input and are updated in one operation. Their names provide the interpretation chosen for this construction; the dipolar relation that contains its poles belongs to the wider D-ND source. The determinant describes area, rather than conservation of the coordinate product $D\cdot ND$.
 
-$\varphi$ is not chosen. It is the minimal non-trivial fixed direction of this
-self-referential map over the integers. The notation may vary; the generator is
-the object.
+## The numerical first step
 
----
+From $x_0=7$, the first iterate is exactly $8/7$ and the fourth is $38/23$. Relative to the initial absolute error $|7-\varphi|$, the error falls by approximately **91.170943%** after one step and **99.365661%** after four steps. The familiar rounded values, **91.2%** and **99.4%**, express this numerical example. The percentages measure reduction of absolute error.
 
-## The first step
+## The relationship made visible
 
-Starting from $x_0 = 7$, after one step: $x_1 = 1.143$.
+An integer matrix has an irrational attracting eigen-direction. Rational projective iteration approaches that direction on the stated domain; an eigenvector on it continues to change scale. Paper Zero makes this relation of invariance and continuation explicit within the wider D-ND research.
 
-The distance to $\varphi$ drops from $5.382$ to $0.475$ — a reduction of **91.2%**.
+The algebraic proof is given above. Iteration makes its consequence observable.
 
-By step 4: **99.4%** of the convergence is complete.
+## Sources and edition
 
-The first step carries most of the information. Each subsequent step refines, but the direction is set immediately. This is autological: the map that says "the first iteration matters most" demonstrates it on itself.
+The D-ND model and its source observations are attributed to Graziano Guiducci. The authorial clarification of 27 October 2026 places mathematics within the general logical model. This revised manuscript uses classical mathematics; its mathematical examples and interpretations are distinguished from those authorial formulations.
 
----
+For the entropy distinction: H. Bruin, *Ergodic Theory I*, Lecture 18, University of Vienna; M. Baake, T. Spindeler and N. Strungaru, *Diffraction of compatible random substitutions in one dimension*, Indagationes Mathematicae 29 (2018), 1031–1071, DOI: 10.1016/j.indag.2018.05.008. The projective entropy statement also follows directly from the circle-partition argument recorded in the accompanying revision notes.
 
-## $R + 1 = R$
-
-At the fixed point: $f(\varphi) = 1 + 1/\varphi = \varphi$.
-
-The next iteration does not change the result. It reveals what was already there.
-
-This is not a tautology. It is the condition that the process has found its own ground. Before the fixed point, each step changes the state. At the fixed point, the step and the state are the same thing.
-
-The equation $R + 1 = R$ says: one more iteration adds nothing. Not because the iteration is empty — because the result already contains it.
-
----
-
-## Two axes
-
-You know where you are only if you move on at least two axes.
-
-$x$ is the determined. $1/x$ is the undetermined. $f(x) = 1 + 1/x$ couples them in one operation. You cannot move on one axis without the other responding.
-
-In vector form the state is a pair:
-
-$$(D, ND) \mapsto (D + ND, D).$$
-
-The determinant does not literally conserve the coordinate product
-$\Delta D \times \Delta ND$. It preserves oriented area in magnitude and reverses
-orientation. Operationally: the axes are coupled. If one axis moves, the other
-is transformed with it.
-
-The first step of the iteration creates both axes simultaneously. Not first one, then the other. The determined and the undetermined are born together in the first act of recursion.
-
----
-
-## What this is not
-
-This is not a paper about physics. $M$ appears in quasicrystals, tight-binding models, Fibonacci lattices, photonic crystals, and the trace map of substitution sequences. The numerical results are published and verified. But this text is not about those applications.
-
-This is not a paper about mathematics. $\varphi$, Fibonacci, continued fractions, and $\mathbb{Q}(\sqrt{5})$ are well-known. Nothing here is new to number theory.
-
-This is not a paper about philosophy. The relationship between completeness and generation, between incompleteness and creativity, has been discussed since Godel. This text does not enter that debate.
-
-**This is the observation that one equation — $f(x) = 1 + 1/x$ — does all three at once.** A rational recursion exposes its irrational fixed direction. A finite process approaches a limit it never reaches as a finite rational state. A minimal orientation-reversing structure generates a residue that a closed cycle does not expose.
-
-The observation requires no apparatus. The verification requires one line of arithmetic. The implication requires only that you execute the map and watch.
-
----
-
-*The map is the proof. The iteration is the demonstration. The fixed point is the theorem.*
-
-*Execute it.*
+Historical edition: March 2026, DOI **10.5281/zenodo.18902950**, the archived repository release v2.0.0. That DOI identifies the historical deposit; this revised manuscript has its own dated identity.

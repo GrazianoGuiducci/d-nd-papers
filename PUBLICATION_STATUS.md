@@ -1,11 +1,13 @@
 # Public version and release status — D-ND Papers
 
-Updated: 22 October 2026.
+Updated: 28 October 2026.
 Repository: `GrazianoGuiducci/d-nd-papers` (public).
 
 ## Paper Zero — current public reference
 
-*The Generative Incompleteness* remains the current preprint and public reference in this repository. Its source files `paper_zero.md`, `paper_zero.tex`, `paper_zero.pdf` and the historical `v2.0.0` release are **unchanged** by the 22 October Paper A status adjustment.
+*The Generative Incompleteness*, revised manuscript dated 28 October 2026, is the current Paper Zero text. Markdown, LaTeX and PDF carry the same revision. The revision preserves the wider authorial D-ND model while qualifying the mathematical claims and their domain; it includes the corrected iteration table, projective convergence proof, determinant examples and fixed-direction/continuing-vector distinction.
+
+The March 2026 `v2.0.0` release and DOI `10.5281/zenodo.18902950` remain historical occurrences. The DOI identifies a repository ZIP catalogued as software, which also contains the historical Paper A PDF. It does not identify the revised manuscript's bytes. Any later deposit or numbered release has its own identity and authorial selection. No journal peer review or acceptance is asserted by this dated revision.
 
 ## Paper A — previous public release, no longer current
 
