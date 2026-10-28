@@ -1,0 +1,20 @@
+Paper Zero - The Generative Incompleteness
+Revised manuscript, 28 October 2026
+
+Copyright 2026 Graziano Guiducci
+
+The English and Italian manuscript and corresponding sources listed below
+are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+paper_zero.pdf
+paper_zero.it.pdf
+paper_zero.md
+paper_zero.it.md
+paper_zero.tex
+paper_zero.it.tex
+
+License: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+This notice applies to these manuscript files. Historical release archives
+and other repository materials retain their existing notices.

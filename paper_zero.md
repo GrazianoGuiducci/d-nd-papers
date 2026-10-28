@@ -119,3 +119,9 @@ The D-ND model and its source observations are attributed to Graziano Guiducci. 
 For the entropy distinction: H. Bruin, *Ergodic Theory I*, Lecture 18, University of Vienna; M. Baake, T. Spindeler and N. Strungaru, *Diffraction of compatible random substitutions in one dimension*, Indagationes Mathematicae 29 (2018), 1031–1071, DOI: 10.1016/j.indag.2018.05.008. The projective entropy statement also follows directly from the circle-partition argument recorded in the accompanying revision notes.
 
 Historical edition: March 2026, DOI **10.5281/zenodo.18902950**, the archived repository release v2.0.0. That DOI identifies the historical deposit; this revised manuscript has its own dated identity.
+
+## Deposit information
+
+**Manuscript license:** Copyright 2026 Graziano Guiducci. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This license covers this manuscript and its corresponding Markdown and LaTeX sources.
+
+**Manuscript DOI:** [10.5281/zenodo.23735742](https://doi.org/10.5281/zenodo.23735742).

@@ -12,7 +12,7 @@ The **Dual-Non-Dual (D-ND) model**, developed by Graziano Guiducci, concerns the
 
 **Papers B–G** were included in a historical public snapshot on 4 March 2026 and removed from the current public branch on 6 March. Their historical availability must not be confused with current publication approval.
 
-**Paper Zero — revised manuscript, 28 October 2026.** Its Markdown, LaTeX and PDF share the dated revision. The March 2026 release v2.0.0 remains a historical edition with its own archive and DOI.
+**Paper Zero — revised manuscript, 28 October 2026.** Its English and Italian Markdown, LaTeX and PDF share the dated revision and match the standalone Zenodo preprint, DOI [10.5281/zenodo.23735742](https://doi.org/10.5281/zenodo.23735742). The March 2026 release v2.0.0 remains a historical edition with its own archive and DOI.
 
 ## Key Result
 
@@ -28,13 +28,15 @@ Graziano Guiducci — Independent Research
 
 ## How to Cite
 
-> Guiducci, G. (2026). *The Generative Incompleteness*. Revised manuscript, 28 October 2026.
+> Guiducci, G. (2026). *The Generative Incompleteness — Paper Zero*. Revised manuscript, 28 October 2026. Zenodo. [https://doi.org/10.5281/zenodo.23735742](https://doi.org/10.5281/zenodo.23735742)
+>
+> All versions of this manuscript: [10.5281/zenodo.23735741](https://doi.org/10.5281/zenodo.23735741).
 >
 > Historical edition: March 2026, repository release v2.0.0, DOI [10.5281/zenodo.18902950](https://doi.org/10.5281/zenodo.18902950). That DOI identifies the historical repository archive; the dated revision has its own source identity.
 
 ## License
 
-This work is shared for academic and research purposes. See [LICENSE](LICENSE) for details.
+The revised English and Italian Paper Zero manuscript and its Markdown and LaTeX sources are licensed under **CC BY 4.0**. The six covered files are listed in [LICENSE-PAPER.txt](LICENSE-PAPER.txt). This manuscript-specific notice applies to these versions; other repository materials and historical archives retain their existing notices, including the repository [LICENSE](LICENSE).
 
 ## Links
 

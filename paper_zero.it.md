@@ -1,0 +1,127 @@
+# L'incompletezza generativa
+
+**Graziano Guiducci · Manoscritto rivisto · 28 ottobre 2026**
+
+*Una ricorsione. Una direzione invariante. Uno stato che prosegue.*
+
+La sorgente D-ND descrive il movimento della possibilità attraverso un riferimento indeterminato e una relazione dipolare che contiene i suoi poli. L'osservatore è l'ente risultante dell'allineamento; osservatore, allineamento e risultante si descrivono nello stesso movimento. La matematica è compresa in questo modello logico generale. Paper Zero ne presenta una particolare rappresentazione matematica: una ricorsione razionale con una direzione proiettiva attrattiva irrazionale.
+
+Il calcolo rende osservabile una relazione precisa: una direzione può restare invariante mentre lo stato che la porta continua a trasformarsi.
+
+## La mappa
+
+$$
+f(x)=1+\frac{1}{x}.
+$$
+
+Per un valore iniziale positivo, ogni iterata affine è definita e la successione converge al rapporto aureo. La tabella comprende anche un valore iniziale negativo la cui specifica orbita rimane definita. I valori sono arrotondati a tre cifre decimali.
+
+| Passo | $x_0=7$ | $x_0=0.1$ | $x_0=-3$ |
+|---|---|---|---|
+| 0 | 7.000 | 0.100 | -3.000 |
+| 1 | 1.143 | 11.000 | 0.667 |
+| 2 | 1.875 | 1.091 | 2.500 |
+| 3 | 1.533 | 1.917 | 1.400 |
+| 4 | 1.652 | 1.522 | 1.714 |
+| 5 | 1.605 | 1.657 | 1.583 |
+| 6 | 1.623 | 1.603 | 1.632 |
+| 7 | 1.616 | 1.624 | 1.613 |
+| 8 | 1.619 | 1.616 | 1.620 |
+
+I due punti fissi reali sono
+
+$$
+\varphi=\frac{1+\sqrt5}{2},\qquad \psi=\frac{1-\sqrt5}{2}=-\frac1\varphi.
+$$
+
+Sulla retta reale proiettiva, la trasformazione è definita in ogni punto e converge alla direzione rappresentata da $\varphi$ da ogni direzione iniziale, eccetto il repellente fisso $\psi$. Nella carta affine, lo zero e le sue preimmagini finite incontrano una divisione per zero: per esempio, $-1\mapsto0$ non ha un valore affine successivo. L'orbita proiettiva prosegue attraverso il punto all'infinito.
+
+## La matrice e la convergenza
+
+$$
+M=\begin{pmatrix}1&1\\1&0\end{pmatrix},\qquad \operatorname{tr}M=1,\qquad \det M=-1.
+$$
+
+Il polinomio caratteristico è $\lambda^2-\lambda-1$. I suoi autovalori sono $\varphi$ e $\psi$. Entrambi sono irrazionali algebrici quadratici.
+
+Siano $r=(\varphi,1)^T$ e $s=(\psi,1)^T$. Ogni vettore non nullo si scrive come $v=ar+bs$. Per $a\ne0$,
+
+$$
+[M^n v]=\left[r+\frac ba\left(\frac\psi\varphi\right)^n s\right]\longrightarrow[r],\qquad \left|\frac\psi\varphi\right|=\varphi^{-2}<1.
+$$
+
+Le parentesi quadre indicano una direzione proiettiva: multipli scalari non nulli rappresentano lo stesso punto. Se $a=0$, la direzione è $[s]$ e rimane fissa. Questo dimostra la convergenza proiettiva enunciata, compresa la sua eccezione.
+
+Le iterate affini razionali finite rimangono razionali quando sono definite. Il loro limite attrattivo è irrazionale. Il titolo nomina questa relazione fra il campo razionale delle iterate finite e la direzione invariante nella sua estensione quadratica $\mathbb Q(\sqrt5)$. Questo è l'enunciato algebrico qui dimostrato. I teoremi di incompletezza di Gödel riguardano la dimostrabilità nelle teorie formali sotto le proprie ipotesi.
+
+## Orientazione e crescita
+
+Il determinante esprime una proprietà geometrica esatta: per qualsiasi coppia di vettori, l'area orientata che essi generano cambia segno sotto $M$, mentre il suo valore assoluto è conservato.
+
+Crescita e periodicità dipendono anche dalla struttura degli autovalori. Per confronto,
+
+$$
+B=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad B^2=I,\quad \det B=-1;\qquad C=\begin{pmatrix}2&1\\1&1\end{pmatrix},\quad \det C=1.
+$$
+
+$B$ è periodica; $C$ ha autovalore espansivo $(3+\sqrt5)/2$. Nella coppia reciproca scelta, cambiare la regola in $g(x)=1-1/x$ dà
+
+$$
+N=\begin{pmatrix}1&-1\\1&0\end{pmatrix},\qquad N^3=-I.
+$$
+
+La sua trasformazione proiettiva ha periodo tre. Questo confronto distingue queste due regole. Il solo segno del determinante non classifica la crescita generativa.
+
+## Perché compare il rapporto aureo
+
+L'equazione del punto fisso positivo $x=1+1/x$ dà $x^2-x-1=0$ e quindi $x=\varphi$. La sua frazione continua è $[1;1,1,1,\ldots]$.
+
+Si può enunciare una minimalità precisa: fra le matrici intere non negative primitive $2\times2$ con determinante $-1$, il raggio spettrale minimo è $\varphi$. Infatti la loro traccia intera $t$ è almeno uno e il raggio spettrale è $(t+\sqrt{t^2+4})/2$. Per $t=1$, gli elementi diagonali sono zero e uno e quelli fuori diagonale sono entrambi uno. I due rappresentanti sono $M$ e $PMP$, dove $P=B$ scambia le coordinate.
+
+L'entropia appartiene a un sistema dinamico specificato. Con $M$ come matrice di adiacenza, lo shift golden mean ha entropia topologica $\log\varphi$ (logaritmo naturale). La sostituzione Fibonacci con la stessa matrice di incidenza ha entropia zero. La mappa proiettiva qui studiata è un omeomorfismo della circonferenza e ha anch'essa entropia zero. Sono impieghi diversi della stessa matrice.
+
+## Una direzione fissa e uno stato che prosegue
+
+Sulla direzione attrattiva,
+
+$$
+Mr=\varphi r,\qquad M^nr=\varphi^nr,\qquad [M^nr]=[r].
+$$
+
+Il vettore cambia scala a ogni passo; la sua direzione proiettiva resta fissa. Questa relazione era già sviluppata nel manoscritto D-ND sulla distinzione relazionale e la continuità della risultante, Appendice B, 20 ottobre 2026.
+
+In questa rappresentazione, l'espressione $R+1=R$ si può leggere come un'ulteriore applicazione della trasformazione proiettiva che lascia invariata la sua direzione fissa: $T([r])=[r]$. È una lettura matematica della risultante D-ND. Il significato sorgente di risultante, riferimento, movimento e osservatore rimane raggiungibile oltre questa rappresentazione scelta.
+
+## Le due coordinate
+
+Si scrive lo stato come coppia di coordinate in relazione $(D,ND)$. Allora
+
+$$
+(D,ND)\longmapsto(D+ND,D),\qquad x=\frac D{ND},\qquad x'=\frac{D+ND}{D}=1+\frac1x.
+$$
+
+Entrambe le coordinate sono già presenti nell'ingresso e vengono aggiornate in una sola operazione. I loro nomi forniscono l'interpretazione scelta per questa costruzione; la relazione dipolare che contiene i poli appartiene alla sorgente D-ND più ampia. Il determinante descrive l'area, anziché la conservazione del prodotto delle coordinate $D\cdot ND$.
+
+## Il primo passo numerico
+
+Da $x_0=7$, la prima iterata è esattamente $8/7$ e la quarta è $38/23$. Rispetto all'errore assoluto iniziale $|7-\varphi|$, l'errore diminuisce di circa **91.170943%** dopo un passo e **99.365661%** dopo quattro passi. I consueti valori arrotondati, **91.2%** e **99.4%**, esprimono questo esempio numerico. Le percentuali misurano la riduzione dell'errore assoluto.
+
+## La relazione resa visibile
+
+Una matrice intera possiede un'autodirezione attrattiva irrazionale. L'iterazione proiettiva razionale si avvicina a quella direzione nel dominio dichiarato; un autovettore su di essa continua a cambiare scala. Paper Zero rende esplicita questa relazione fra invarianza e continuazione nella ricerca D-ND più ampia.
+
+La prova algebrica è esposta sopra. L'iterazione ne rende osservabile la conseguenza.
+
+## Fonti ed edizione
+
+Il modello D-ND e le sue osservazioni sorgente sono attribuiti a Graziano Guiducci. Il chiarimento autoriale del 27 ottobre 2026 colloca la matematica nel modello logico generale. Questo manoscritto rivisto usa matematica classica; esempi matematici e interpretazioni sono distinti da quelle formulazioni autoriali.
+
+Per la distinzione fra entropie: H. Bruin, *Ergodic Theory I*, lezione 18, Università di Vienna; M. Baake, T. Spindeler e N. Strungaru, *Diffraction of compatible random substitutions in one dimension*, Indagationes Mathematicae 29 (2018), 1031–1071, DOI: 10.1016/j.indag.2018.05.008. L'enunciato sull'entropia proiettiva segue anche direttamente dall'argomento sulle partizioni della circonferenza riportato nelle note di revisione allegate.
+
+Edizione storica: marzo 2026, DOI **10.5281/zenodo.18902950**, archivio della release v2.0.0 del repository. Quel DOI identifica il deposito storico; questo manoscritto rivisto conserva una propria identità datata.
+
+## Informazioni sul deposito
+
+**Licenza del manoscritto:** Copyright 2026 Graziano Guiducci. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). La licenza riguarda questo manoscritto e i corrispondenti sorgenti Markdown e LaTeX.
+
+**DOI del manoscritto:** [10.5281/zenodo.23735742](https://doi.org/10.5281/zenodo.23735742).

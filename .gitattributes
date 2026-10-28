@@ -1,0 +1,4 @@
+*.md text eol=lf
+*.tex text eol=lf
+LICENSE-PAPER.txt text eol=lf
+*.pdf binary
